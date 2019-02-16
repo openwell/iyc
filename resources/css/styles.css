@@ -176,3 +176,9 @@ nav ul li a:visited {
 .slick-prev:before, .slick-next:before {
  color: #000 !important;
 }
+.team-block{
+  padding-left:30px 
+}
+.col-md-4{
+  width:30.5%;
+}
