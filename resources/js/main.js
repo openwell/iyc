@@ -18,6 +18,26 @@ $(document).ready(function() {
   $(".multiple-items").slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 575.98,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 170) {
+      $(".nav-background-container").addClass("navfixed animated fadeInDown");
+    }
+    if (scroll <= 170) {
+      $(".nav-background-container").removeClass("navfixed animated fadeInDown");
+    }
   });
 });
+
