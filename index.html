@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MFM IYC</title>
-    <link rel="stylesheet" href="./resources/css/styles.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -105,9 +104,19 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./resources/css/styles.css" />
   </head>
   <body>
-    <header class="nav_background row1">
+    <header class="row1 nav_background ">
+        <!-- <div class="main_background2">
+          </div> -->
+      <div class="main_background">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div class="nav-background-container">
         <div class="logo">
           <img src="./resources/images/mfmlogo.png" alt="" srcset="" />
@@ -121,7 +130,35 @@
             <li><a href="#gallery">Gallery</a></li>
           </ul>
         </nav>
+        <!-- hamburger  menu -->
+        <div class="mobile_menu">
+          <a class="menu_bar_toggle">
+            <div class="menubars"></div>
+          </a>
+        </div>
       </div>
+      <!-- Mobile menu items -->
+      <section class="mobile-nav-bg">
+          <nav class="mobile-nav-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+          </nav>
+      <!--Mobile Nav: Footer -->
+    <footer class="mobile-nav-footer">
+        <nav>
+          <ul>
+            <li><a href="#" >Facebook</a></li>
+            <li><a href="#" >Twitter</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+          </ul>
+        </nav>
+      </footer>
+  </section>
       <div class="header-message">
         <h1>
           WELCOME TO MOUNTAIN OF FIRE AND MIRACLE MINISTRIES IPAJA YOUTH CHURCH
@@ -130,12 +167,12 @@
       </div>
     </header>
     <!-- About -->
-    <div class="well well-lg text-center" id="about">
+    <div class="well well-lg text-center row1" id="about">
       <h1><i>HOME OF SOLUTIONS</i></h1>
       No matter what the challenge, God is here for you
     </div>
 
-    <section class="list-group-item ">
+    <section class="list-group-item row1">
       <div class="container">
         <h2 class="list-group-item-heading">
           Meet <strong>the Pastorate</strong>
@@ -222,21 +259,21 @@
       <div>
         <figure>
           <figcaption>Listen to the T-Rex:</figcaption>
-          <audio controls src="/media/examples/t-rex-roar.mp3">
+          <audio controls src="">
             Your browser does not support the
             <code>audio</code> element.
           </audio>
         </figure>
         <figure>
           <figcaption>Listen to the T-Rex:</figcaption>
-          <audio controls src="/media/examples/t-rex-roar.mp3">
+          <audio controls src="">
             Your browser does not support the
             <code>audio</code> element.
           </audio>
         </figure>
         <figure>
           <figcaption>Listen to the T-Rex:</figcaption>
-          <audio controls src="/media/examples/t-rex-roar.mp3">
+          <audio controls src="">
             Your browser does not support the
             <code>audio</code> element.
           </audio>
@@ -359,7 +396,7 @@
         </div>
     </div>
   </div> -->
-      <div class="footer-copyright text-center py-3 center-block">
+      <div class="footer-copyright text-center py-3 center-block copyright">
         © 2019 Copyright:<a href="#"> COSIT</a>
       </div>
     </footer>
