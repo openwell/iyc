@@ -30,14 +30,31 @@ $(document).ready(function() {
     ]
   });
 
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 170) {
-      $(".nav-background-container").addClass("navfixed animated fadeInDown");
-    }
-    if (scroll <= 170) {
-      $(".nav-background-container").removeClass("navfixed animated fadeInDown");
-    }
-  });
+  // $(window).scroll(function() {
+  //   var scroll = $(window).scrollTop();
+  //   if (scroll >= 170) {
+  //     $(".nav-background-container").addClass("navfixed animated fadeInDown");
+  //   }
+  //   if (scroll <= 170) {
+  //     $(".nav-background-container").removeClass("navfixed animated fadeInDown");
+  //   }
+  // });
 });
 
+window.onscroll = () => {
+  if (window.pageYOffset >= 170) {
+    return document
+      .querySelector(".nav-background-container")
+      .classList.add("navfixed", "animated", "fadeInDown");
+  }
+  if (window.pageYOffset <= 170) {
+    return document
+      .querySelector(".nav-background-container")
+      .classList.remove("navfixed", "animated", "fadeInDown");
+  }
+};
+
+document.querySelector(".menu_bar_toggle").onclick = (event) => {
+  event.target.classList.toggle("js-nav-open");
+  document.querySelector(".mobile-nav-bg").classList.toggle("js-nav-open");
+};
